@@ -12,7 +12,7 @@ p,h1,h2,h3,i {
   padding-bottom: 1px;
 }
 body{
-  font-family: 'Roboto Mono';font-size: 25px;
+  font-family: 'Roboto Mono';font-size: 16px;
   background-color: #F0F2F5;
   color: black;
   padding-left: 200px;
@@ -41,8 +41,7 @@ br{ display: none; }
     margin-bottom: 10px;
   }
   body{
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: 40px;
     text-align: left;
   }
 }
