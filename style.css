@@ -12,7 +12,7 @@ p,h1,h2,h3,i {
   padding-bottom: 1px;
 }
 body{
-  font-family: 'Roboto Mono';font-size: 30px;
+  font-family: 'Roboto Mono';font-size: 24px;
   background-color: #F0F2F5;
   color: black;
   padding-left: 200px;
@@ -32,9 +32,6 @@ br{ display: none; }
     text-align: center;
     margin-bottom: 10px;
   }
-  body{
-    font-size: 10px;
-  }
 }
 @media only screen and (max-width: 900px) {
   .image {
@@ -49,7 +46,6 @@ br{ display: none; }
     padding-left: 0px;
     padding-right: 0px;
     text-align: left;
-    font-size: 10px;
   }
 }
 
