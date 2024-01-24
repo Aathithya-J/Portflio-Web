@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: aathithya.vercel.app
-Token: a418c27d7f505b5b470c6a25049d0a08d9f4282ab41e491d6c5c7f1bacad2abc
