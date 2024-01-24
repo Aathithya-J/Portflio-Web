@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Aathithya</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    .background {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background-color: #222232;
+      zoom: 140%;
+    }
+
+    /* Section 1 styles */
+    .title {
+      color: yellow;
+      font-size: 40px;
+      font-family: system-ui;
+
+    }
+
+    .section1 {
+      display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .profile {
+      max-width: 250px;
+      max-height: 200px;
+      float: left;
+      border-radius: 50%;
+    }
+
+    .aboutme {
+      color: white;
+    }
+
+    /* Skill cards styles */
+    .skills-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .skill-card {
+      width: 200px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 0 10px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      color: black; /* Text color is set to black */
+    }
+
+    .skill-card:hover {
+      transform: scale(1.1);
+    }
+
+    /* Button styles */
+    section.records {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      color: white;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #ff9900;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Achievements section styles */
+    .container {
+      padding-top: 40px; /* Added padding to the top */
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .background-achievements {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      flex-grow: 1;
+      width: 100%;
+      text-align: center;
+    }
+
+    .achievement-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: rgb(255, 255, 255); /* Text color is set to black */
+    }
+
+    .achievement-title img {
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .achievement-description {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .achievement-description li {
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: rgb(255, 255, 255); /* Text color is set to black */
+    }
+
+    .right-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 20px;
+      align-self: center;
+    }
+
+    .sep {
+      padding-left: 20px;
+      margin: 20px; /* Added margin for spacing */
+    }
+
+    .sep h1 {
+      font-size: 24px;
+      color: #ff9900;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: wh;
+      }
+
+      .background-achievements {
+        text-align: left;
+      }
+
+      .right-image {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-top: 0;
+        align-self: flex-start;
+      }
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+
+      .skills-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .skill-card {
+        margin: 20px;
+        width: 70%;
+        color: black;
+      }
+
+      .sep {
+        margin: 0%;
+        text-align: center;
+        border-left: none; /* Remove the border for small screens */
+      }
+    }
+  </style>
+</head>
+
+<body class="background">
+  <!-- Section 1 -->
+  <div class="section1">
+    <img src="Images/profile.jpg" alt="Avatar" class="profile">
+    <h2 class="title">Aathithya <br> Jegatheesan</h2>
+    <div class="Aboutme">
+      <p class="aboutme">Hi, I am a frontend developer, app developer, and cybersecurity enthusiast. I am the
+        President of SST Inc, IC for Lego Aspect of Robotics in my club</p>
+    </div>
+  </div>
+
+  <div class="sep">
+    <h1>Skills</h1>
+  </div>
+
+  <!-- Skill Cards -->
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>Frontend Development</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <h3>App Development</h3>
+      <p>React Native, Flutter</p>
+    </div>
+    <div class="skill-card">
+      <h3>Cybersecurity</h3>
+      <p>Ethical Hacking, Security Analysis</p>
+    </div>
+  </div>
+
+  <div class="sep">
+    <h1>Achivements</h1>
+  </div>
+
+  <!-- Achievements Section -->
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">Robocup</div>
+      <ul class="achievement-description">
+        <li>Became a Member of the Organization, 2022</li>
+        <li>3rd in Autonomous Driving League (Line Tracing) - 2021</li>
+        <li>1st Place in Team in Autonomous Driving League in Tianjin China (Line Tracing) - 2021</li>
+        <li>2nd Place in Grand Prix 2020</li>
+        <li>1st Place in Robodance, 2019</li>
+        <li>2nd Place in Robocup Rescue, 2018</li>
+        <li>Became a Member of the Organization, 2022</li>
+      </ul>
+      <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">NRC</div>
+      <ul class="achievement-description">
+        <li>Distinction Open Category 2020, won 600 dollars</li>
+        <li>Regular Category 2018, Top 25 in Programming Presentation</li>
+        <li>Open Category, Participation 2021</li>
+      </ul>
+      <!-- <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text"> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">MakeX</div>
+      <ul class="achievement-description">
+        <li>1st Place in Inaugural Competition in Singapore, 2018</li>
+        <li>Morality Award in Guangzhou China, 2018</li>
+      </ul>
+      <!-- <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text"> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">Infocomn Technology</div>
+      <ul class="achievement-description">
+        <li>Young Techno Entrepenuer, Certificate of Achievement</li>
+        <li>FLL, Participation, 2023, 2024</li>
+        <li>National Coding Competition, Bronze, 2018</li>
+        <li>NOI, Certificate of Participation, 2023</li>
+        <li>Perse Finals, Higher Participation, 2023</li>
+        <li>Perse Round 1, Merit, 2023</li>
+        <li>National Youth Tech Championship, Top 20, 2023</li>
+        <li>Splash Awards, Participation</li>
+        <li>Hack&Roll, Participation, 2023</li>
+        <li>Youth Cyber Exploration Programme Ngee Ann, 2nd, 2023</li>
+        <li>Youth Cyber Exploration Programme Central, Participation, 2023</li>
+        <li></li>
+      </ul>
+      <!-- <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text"> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">Science/Math</div>
+      <ul class="achievement-description">
+        <li>SASMO Bronze, 2021</li>
+        <li>SASMO Participaiton, 2022</li>
+        <li>SASMO Participaiton, 2023</li>
+        <li>CB Pauls, Merit, 2022</li>
+        <li>Australian Math Contest, Credit, 2022, 2023</li>
+        <li>Singapore Math Project Festival, Honourable Mention</li>
+        <li>INTOC, Bronze, 2022</li>
+        <li>Tan Kah Kee Young Inventors Award, Participaiton, 2022</li>
+        <li>Opportunity X, Honourable Mention, 2023</li>
+        <li>ISIF, Gold Meda, 2023</li>
+        <li>I2A2SPO, Silver Medal, 2023</li>
+        <li>Singapore Science Engineering Fair, Participation, 2023</li>
+        <li>International Students Science Fair Brisbane, Pariticipation, 2023</li>
+      </ul>
+      <!-- <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text"> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="background-achievements">
+      <div class="achievement-title">Experience/Leadership</div>
+      <ul class="achievement-description">
+        <li>Edusave Character Award, 2019</li>
+        <li><li>Edusave Eagles Award, 2018, 2020</li></li>
+        <li>Edusave Bursary Award, 2017, 2018, 2019</li>
+        <li>Internship with Nullspace, Nov-Dec 2022</li>
+        <li>Chief Marketing Officer of SST Inc, 2022-2023</li>
+        <li>President of SST Inc, 2023-2024</li>
+        <li>Vice-Chair of United Nations Development Program SSTMUN</li>
+      </ul>
+      <!-- <img class="right-image" src="Images/profile.jpg" alt="Your Image Alt Text"> -->
+    </div>
+  </div>
+
+  
+
+</html>
