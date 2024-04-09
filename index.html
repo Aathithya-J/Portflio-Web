@@ -38,15 +38,44 @@
   </div>
   <div>
     <h3>Education:</h3>
-    <h3>Experiences:</h3>
-      <h3>🛠️ Projects I've Worked On:</h3>
-      <ul>
-        <li>📝 <strong>AttendINC</strong>: An efficient attendance system</li>
-        <li>🌱 <strong>ASPA Project</strong>: A platform for Doctors!</li>
-        <li>🐟 <strong>FishML</strong>: Using ML to detect fish illnesses to reducing fatality rates</li>
-        <li>➕ <strong>MathX</strong>: Educational platform for students to enhance math skills</li>
-        <li>🔬 <strong>Sci Research Projects</strong>: Various scientific research initiatives</li>
-      </ul>
+    <h3>Skills:</h3>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Competitive Programming</h3>
+          <p>Some text</p>
+          <!-- Add Icon -->
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>System Development</h3>
+          <p>Some text/p>
+          <!-- Add Icon -->
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3> Robotics and Engineering</h3>
+          <p>Some text</p>
+          <!-- Add Icon -->
+        </div>
+      </div>
+    </div>
+    <h3>🛠️ Projects I've Worked On:</h3>
+    <ul>
+      <li>📝 <strong>AttendINC</strong>: An efficient attendance system</li>
+      <!-- Add Image -->
+      <li>🌱 <strong>ASPA Project</strong>: A platform for Doctors!</li>
+      <li>🐟 <strong>FishML</strong>: Using ML to detect fish illnesses to reducing fatality rates</li>
+      <!-- Add Image -->
+      <li>➕ <strong>MathX</strong>: Educational platform for students to enhance math skills</li>
+      <!-- Add Image -->
+      <li>🔬 <strong>Sci Research Projects</strong>: Various scientific research initiatives</li>
+      <!-- Add Image -->
+    </ul>
   </div>
   </head>
 
@@ -72,7 +101,7 @@
     body {
       font-family: 'Roboto Mono';
       font-size: 18px;
-      background-color: #222333;
+      background-color: #222435;
       color: rgb(255, 255, 255);
       padding-left: 200px;
       padding-right: 200px;
@@ -107,6 +136,31 @@
         text-align: left;
       }
     }
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    .row {
+      margin: 0 -5px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #494949;
+    }
   </style>
-
 </html>
